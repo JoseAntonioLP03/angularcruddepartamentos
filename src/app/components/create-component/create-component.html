@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center mt-5">
+  <div class="card w-50 shadow-lg card-custom">
+    <div class="card-header text-center card-header-custom">
+      <h4>Crear Departamento</h4>
+    </div>
+    <div class="card-body">
+      <form>
+        <!-- Id Departamento -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Id Departamento</label>
+          <input
+            type="number"
+            name="cajaid"
+            #cajaid
+            class="form-control input-custom"
+            placeholder="Ingresa el ID"
+            required
+          />
+        </div>
+
+        <!-- Nombre -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Nombre</label>
+          <input
+            type="text"
+            name="cajanombre"
+            #cajanombre
+            class="form-control input-custom"
+            placeholder="Nombre del departamento"
+            required
+          />
+        </div>
+
+        <!-- Localidad -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Localidad</label>
+          <input
+            type="text"
+            name="cajalocalidad"
+            #cajalocalidad
+            class="form-control input-custom"
+            placeholder="Localidad"
+            required
+          />
+        </div>
+
+        <!-- Botón -->
+        <div class="text-center">
+          <button
+            type="submit"
+            (click)="insertDepartamento()"
+            class="btn btn-primary btn-custom w-50"
+          >
+            Crear Departamento
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

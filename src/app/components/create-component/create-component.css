@@ -1,0 +1,51 @@
+/* Card personalizado */
+.card-custom {
+  background-color: #1a1a1a; /* Fondo oscuro tipo menú */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Cabecera */
+.card-header-custom {
+  background: linear-gradient(90deg, #0d0d0d, #343a40);
+  color: #07daff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+label {
+  color: #f0f0f0;
+}
+
+/* Inputs personalizados */
+.input-custom {
+  border-radius: 8px;
+  border: 1px solid #07daff66;
+  background-color: #212529;
+  color: #f0f0f0;
+}
+
+.input-custom::placeholder {
+  color: #aaaaaa;
+}
+
+/* Efecto focus en inputs */
+.input-custom:focus {
+  border-color: #07daff;
+  box-shadow: 0 0 8px #07daff44;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* Botón personalizado */
+.btn-custom {
+  background-color: #07daff;
+  border: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #05c1e0;
+  transform: scale(1.05);
+}

@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center mt-4">
+  <div class="table-container w-75">
+    @if(departamentos.length > 0){
+    <table class="table table-striped table-hover align-middle shadow-sm table-custom">
+      <thead class="table-dark table-head-custom">
+        <tr>
+          <th>Numero</th>
+          <th>Nombre</th>
+          <th>Localidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (dept of departamentos; track dept) {
+        <tr>
+          <td>{{ dept.numero }}</td>
+          <td>{{ dept.nombre }}</td>
+          <td>{{ dept.localidad }}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+    }
+  </div>
+</div>
