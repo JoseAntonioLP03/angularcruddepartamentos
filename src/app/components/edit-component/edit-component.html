@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-center mt-4">
+  <div class="edit-container w-75">
+    <h1 class="edit-title text-center mb-4">✏️ Editar Departamento</h1>
+
+    @if(departamento) {
+    <form #editForm="ngForm" class="edit-form">
+      <div class="form-group">
+        <label for="cajaid">Id:</label>
+        <input
+          type="number"
+          id="cajaid"
+          #cajaid
+          name="cajaid"
+          [value]="departamento.numero"
+          disabled
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="cajanombre">Nombre:</label>
+        <input
+          type="text"
+          id="cajanombre"
+          #cajanombre
+          name="cajanombre"
+          [value]="departamento.nombre"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="cajalocalidad">Localidad:</label>
+        <input
+          type="text"
+          id="cajalocalidad"
+          #cajalocalidad
+          name="cajalocalidad"
+          [value]="departamento.localidad"
+          required
+        />
+      </div>
+
+      <div class="edit-botones text-center mt-4">
+        <button type="button" class="btn edit-btn" (click)="updateDepartamento()">
+          💾 Guardar
+        </button>
+        <a class="btn cancel-btn" [routerLink]="['/']">❌ Cancelar</a>
+      </div>
+    </form>
+    }
+  </div>
+</div>

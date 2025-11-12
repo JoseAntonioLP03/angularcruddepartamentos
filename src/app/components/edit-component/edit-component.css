@@ -1,0 +1,94 @@
+/* Contenedor principal */
+.edit-container {
+  background-color: #b3f4ff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  color: #212529;
+  max-width: 700px;
+}
+
+/* Título */
+.edit-title {
+  color: #000;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Formulario */
+.edit-form {
+  background-color: #212529;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #f0f0f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Campos del formulario */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #07daff;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input {
+  border: 1px solid #07daff;
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 6px #07daff;
+  transform: scale(1.02);
+}
+
+/* 🔹 Botones */
+.edit-botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.edit-btn,
+.cancel-btn {
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #07daff;
+}
+
+/* Guardar */
+.edit-btn {
+  background-color: #07daff;
+  color: #212529;
+}
+
+.edit-btn:hover {
+  background-color: #02c0e3;
+  transform: scale(1.05);
+}
+
+/* Cancelar */
+.cancel-btn {
+  background-color: #212529;
+  color: #07daff;
+}
+
+.cancel-btn:hover {
+  background-color: #07daff;
+  color: #212529;
+  transform: scale(1.05);
+}

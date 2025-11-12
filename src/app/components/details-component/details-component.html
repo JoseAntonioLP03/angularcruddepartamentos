@@ -1,1 +1,30 @@
-<p>details-component works!</p>
+<div class="d-flex justify-content-center mt-4">
+  <div class="detalle-container w-75">
+    <h1 class="detalle-title text-center mb-4">Detalles del Departamento</h1>
+
+    @if(departamento) {
+    <ul class="detalle-lista list-unstyled">
+      <li>
+        <strong>Id:</strong> <span>{{ departamento.numero }}</span>
+      </li>
+      <li>
+        <strong>Nombre:</strong> <span>{{ departamento.nombre }}</span>
+      </li>
+      <li>
+        <strong>Localidad:</strong> <span>{{ departamento.localidad }}</span>
+      </li>
+    </ul>
+    }
+
+    <!-- Contenedor de botones en paralelo -->
+    <div class="detalle-botones text-center mt-4">
+      <a class="btn btn-dark detalle-btn" [routerLink]="['/edit/' + departamento.numero]"
+        >✏️ Editar</a
+      >
+      <a class="btn btn-dark detalle-btn" (click)="deleteDepartamento(departamento.numero)"
+        >❌ Eliminar</a
+      >
+      <a class="btn btn-dark detalle-btn" [routerLink]="['/']">🏠 Volver al Home</a>
+    </div>
+  </div>
+</div>

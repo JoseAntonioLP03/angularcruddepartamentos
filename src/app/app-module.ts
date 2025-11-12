@@ -10,6 +10,7 @@ import { provideHttpClient } from '@angular/common/http';
 import ServiceDepartamentos from './service/service.departamentos';
 import { CreateComponent } from './components/create-component/create-component';
 import { DetailsComponent } from './components/details-component/details-component';
+import { EditComponent } from './components/edit-component/edit-component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DetailsComponent } from './components/details-component/details-compone
     DepartamentosComponent,
     MenuComponent,
     CreateComponent,
-    DetailsComponent
+    DetailsComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
